@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div id='container'>
+		<h1>Gifter</h1>
+		<div id="desc">Convert twitter videos to gifs</div>
+
+		<input id="url" type="text" placeholder="https://twitter.com/leTourdeFranz/status/885480890578739202" />
+		<button id="convertButton" type="button">Convert to GIF</button>
+		<img id="loadingGif" src="loader.gif" style="display:none"/>
+		<div id="errorMsg" style="display:none"></div>
+		<img id="resultGif" class="result" style="display:none"/>
+		<div id="focusMsg" style="display:none">Keep the the tab on the foreground during the conversion</div>
+		<button id="downloadButton" class="resultHidden" type="button" style="display:none">Download</button>
+	</div>
+
+	<script src="gifshot.js"></script>
+	<script src="main.js"></script>
+	<script src="download.js"></script>
+</body>
+
+</html>
